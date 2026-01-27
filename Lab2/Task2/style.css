@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(12,16,20);
+}
+
+h4{
+    margin: 0;
+}
+
+.up{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.main_text{
+    text-align: center;
+    word-spacing: 2px;
+    font-size:50px;
+    color: white;
+}
+.left{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 400px;
+    margin-left: 250px
+
+}
+
+.meta{
+    filter:brightness(150%);
+    width: 60px;
+    height: 40px;
+}
+
+.facebook{
+    height: 40px;
+    width: 600px;
+    background-color: transparent;
+    color:white;
+    border-radius: 20px;
+}
+.facebook_pic{
+    display: block; 
+    margin-left: 20px;
+    width: 20px;  /* Размер жестко зафиксирован */
+    height: 20px; /* Размер жестко зафиксирован */
+    object-fit: contain; /* Картинка впишется в эти размеры без искажений */
+    display: block;
+    
+}
+
+.create{
+    height: 40px;
+    width: 600px;
+    color:rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);
+    background-color: transparent;
+    border-radius: 20px;
+
+}
+
+.down{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    opacity: 0.5
+}
+.login_button{
+    height: 40px;
+    width: 600px;
+    color:rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);
+    background-color: rgb(0, 140, 255);
+    border-radius: 20px;
+    color:white;
+}
+
+.login{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(21,33,39);
+    gap:15px;
+    border-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    word-spacing: 1px;
+    padding-top: 200px;
+    min-width: 650px;
+    min-height: 700px;
+}
+.login_text{
+    color: rgb(208, 216, 219);
+}
+.input{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(21,33,39);
+}
+.input:focus{
+            border-color:rgb(216, 216, 216);
+        }
+.input:active{
+            border-color:rgb(216, 216, 216);
+        }
