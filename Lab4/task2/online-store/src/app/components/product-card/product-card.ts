@@ -22,7 +22,7 @@ export class ProductCard {
   }
 
   get telegAppUrl(): string{
-    const text = `${this.product.link}$text=${this.product.description}`;
+    const text = `${this.product.link}&text=${this.product.description}`;
     return `https://t.me/share/url?url=${this.encode(text)}`
   }
 
