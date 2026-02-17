@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import {NgForOf} from '@angular/common';
 import {ProductCard} from '../product-card/product-card';
 import {Product} from '../../../interface/product.model';
 
 @Component({
   selector: 'app-product-list',
   imports: [
-    NgForOf,
     ProductCard
   ],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',
 })
 export class ProductList {
+  trackByID(index:number,item:any){return item.id};
   products: Product[] = [
     {
       id: 1,
