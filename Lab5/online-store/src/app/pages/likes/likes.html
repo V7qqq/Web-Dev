@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div class = "likes">
+@for (product of likes; track product.id){
+  @if (product.liked){
+    <app-product-card [product]="product"></app-product-card>
+  }
+}
+</div>

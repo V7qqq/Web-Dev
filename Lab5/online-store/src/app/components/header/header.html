@@ -1,0 +1,18 @@
+<div class = "header">
+  <div class = "header-logo">
+  <img alt = "logo" src = "/images/galkin.webp">
+    <span>Galkin Store</span>
+  </div>
+  <a routerLink = '' >Каталог</a>
+  <a routerLink = '/contacts'>Контакты</a>
+  <a routerLink = '/likes'>Нравится</a>
+  <form class = "category-form">
+    <label >Выберите категорию:</label>
+    <select (change)="onCategoryChange($event)" class="category-select">
+      <option value="">Все категории</option>
+      @for (catName of onlycategory; track catName) {
+      <option [value]="catName">{{ catName }}</option>
+    }
+    </select>
+  </form>
+</div>
