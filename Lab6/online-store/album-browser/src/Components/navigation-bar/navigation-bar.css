@@ -1,0 +1,14 @@
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 0px 16px;
+  background-color: lightyellow;
+  height: 40px;
+}
+
+
+
+
+

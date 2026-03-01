@@ -1,0 +1,7 @@
+<div class = "photo-list">
+  @for (ph of photo(); track ph.id) {
+     <app-photo-card [id] = ph.id [title] = ph.title> </app-photo-card>
+  }
+</div>
+
+

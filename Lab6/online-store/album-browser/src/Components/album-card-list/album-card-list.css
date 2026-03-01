@@ -1,0 +1,27 @@
+.CardList{
+  display : flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.Card{
+  display: grid;
+  grid-template-columns: 16fr 1fr 1fr;
+  gap: 16px;
+}
+.image{
+  width: 100px;
+}
+
+img{
+  cursor: pointer;
+}
+
+a:active,
+ahover,
+a {
+  text-decoration: none;
+  color: #666;
+}
+

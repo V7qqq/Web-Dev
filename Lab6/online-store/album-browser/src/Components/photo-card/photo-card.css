@@ -1,0 +1,11 @@
+.photo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+}
+
+.photo:hover{
+  scale: 1.05;
+}

@@ -1,0 +1,17 @@
+
+<div class = "CardList">
+@for (alb of album(); track alb.id) {
+  @if (!albumservice.delalbum().includes(alb.id)) {
+    <div class = "Card">
+      <a routerLink = '/albums/{{alb.id}}'>
+        <app-album-card [id] = alb.id [title] = alb.title (DeleteEvent)="deleteAlbum($event)"  ) (NameEvent)="changetext(alb.id,alb.title)"> </app-album-card>
+      </a>
+    <img (click)="deleteAlbum(alb.id)" class = "image" src = " https://cdn-icons-png.flaticon.com/512/3481/3481306.png"/>
+      <img (click) = "changetext(alb.id,alb.title)" class = "image" src = "https://www.freeiconspng.com/uploads/writing-png-6.png">
+
+      </div>
+  }
+
+}
+</div>
+
