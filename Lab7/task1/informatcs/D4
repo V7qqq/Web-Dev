@@ -1,0 +1,11 @@
+n = int(input())
+current = 1
+while True:
+    if (n == current):
+        print("Yes")
+        break
+    elif (n > current):
+        current *=2
+    else:
+        print("No")
+        break
