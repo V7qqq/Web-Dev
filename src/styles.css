@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "fonts.css";
+
+
+:root {
+  --primary: #007bff;
+}
+
+body{
+  background-color: white;
+  align-items: center;
+  font-family: "JetBrains Mono";
+}
+
+a{
+  text-decoration: none;
+}
+
+

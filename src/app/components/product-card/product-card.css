@@ -1,0 +1,49 @@
+.product_card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 250px;
+  height: 300px;
+}
+
+
+.product_card_bottom{
+  display :flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: flex-end;
+
+}
+.product_card_upper{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+
+}
+img{
+  max-height: 200px;
+  max-width: 200px;
+  display: flex;
+  flex:1;
+}
+
+.share-icon{
+  height: 50px;
+  width: 50px;
+}
+.share{
+  display: flex;
+  flex-direction: column;
+  flex:10;
+}
+
+.whatsapp{
+  [href]="'https://wa.me/?text=' + encode('Check out this product: ' + product.link)"
+}
+.telegram{
+  [href] = "'https://t.me/share/url?url={{product.link}}&text=' + encode('{{product.name}}')"
+}
+
+.product_card:hover{
+  opacity: 0.8;
+}

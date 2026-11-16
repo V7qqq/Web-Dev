@@ -1,0 +1,21 @@
+<a [href] = "product.link" target = "_blank">
+<div class = "product_card" [title] = "product.description">
+  <div class = "product_card_upper">
+    <img [src] = "product.image">
+    <div class = 'share'>
+      <a class = 'telegram' target = '_blank' [href] = 'telegAppUrl'>
+        <img class = 'share-icon' src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/960px-Telegram_logo.svg.png'>
+      </a>
+      <a target = '_blank' class = 'whatsapp' [href] = 'whatsAppUrl'>
+        <img class = 'share-icon' src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/662px-WhatsApp_icon.png'>
+      </a>
+    </div>
+  </div>
+  <div class = "product_card_bottom">
+    <span>Имя :  {{product.name}}</span>
+    <span>Цена :  {{product.price}} Тг</span>
+    <span>Рейтинг :  {{product.rating}}</span>
+  </div>
+</div>
+</a>
+
